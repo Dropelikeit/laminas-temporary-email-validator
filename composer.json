@@ -1,0 +1,76 @@
+{
+  "name": "marcel-strahl/laminas-temporary-email-validator",
+  "description": "add temporary email address validator for laminas / mezzio",
+  "minimum-stability": "stable",
+  "keywords": [
+    "laminas",
+    "mezzio",
+    "validator",
+    "temporary-email-detection",
+    "temporary-email-validator",
+    "temporary",
+    "email"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcel Strahl",
+      "email": "info@marcel-strahl.de"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/laminas/laminas-validator/issues",
+    "source": "https://github.com/laminas/laminas-validator"
+  },
+  "require": {
+    "jprangenbergde/temporary-email-detection": "^1.1",
+    "laminas/laminas-config": "^3.5",
+    "laminas/laminas-http": "^2.14",
+    "laminas/laminas-servicemanager": "^3.6",
+    "laminas/laminas-validator": "^2.14"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laminas": {
+      "component": "MarcelStrahl\\LaminasTemporaryEmailValidator",
+      "config-provider": "MarcelStrahl\\LaminasTemporaryEmailValidator\\ConfigProvider"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MarcelStrahl\\LaminasTemporaryEmailValidator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MarcelStrahl\\LaminasTemporaryEmailValidator\\Test\\": "test/"
+    }
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "^2.3",
+    "laminas/laminas-container-config-test": "^0.3.2",
+    "phpunit/phpunit": "^9.5",
+    "psalm/plugin-phpunit": "^0.16.1",
+    "vimeo/psalm": "^4.7"
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@static-analysis",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "static-analysis": "psalm --shepherd --stats"
+  },
+  "scripts-descriptions": {
+    "cs-check": "Run coding standards checks.",
+    "cs-fix": "Automatically fix coding standard issues.",
+    "static-analysis": "run static code analysis (plsam).",
+    "test": "Run unit tests."
+  }
+}

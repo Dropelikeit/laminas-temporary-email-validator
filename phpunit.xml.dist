@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         colors="true">
+    <testsuites>
+        <testsuite name="Temporaray Email Validator Test Suite">
+            <directory>./test/</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </coverage>
+
+    <php>
+        <ini name="date.timezone" value="UTC"/>
+        <ini name="xdebug.max_nesting_level" value="3000"/>
+        <env name="TESTS_LAMINAS_VALIDATOR_ONLINE_ENABLED" value="false" />
+    </php>
+</phpunit>
