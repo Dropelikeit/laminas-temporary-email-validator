@@ -12,8 +12,15 @@ use TemporaryEmailDetection\Client;
 
 final class Factory implements FactoryInterface
 {
-    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): IsNotTemporaryEmailValidator
-    {
+    /**
+     * @param string $requestedName
+     * @param array|null $options
+     */
+    public function __invoke(
+        ContainerInterface $container,
+        $requestedName,
+        ?array $options = null
+    ): IsNotTemporaryEmailValidator {
         /** @var Client $client */
         $client = $container->get(ClientInterface::class);
 

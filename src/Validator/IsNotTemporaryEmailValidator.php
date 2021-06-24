@@ -31,6 +31,9 @@ final class IsNotTemporaryEmailValidator extends AbstractValidator
         $this->client = $client;
     }
 
+    /**
+     * @param mixed $value
+     */
     public function isValid($value): bool
     {
         $this->setValue($value);
