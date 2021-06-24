@@ -10,8 +10,7 @@ final class Module
      * @psalm-return array{
      *     service_manager: array{
      *          aliases: array<class-string, class-string>,
-     *          factories: array<class-string, class-string>,
-     *          delegators: array{ValidatorManager: list<class-string>}
+     *          factories: array<class-string, class-string>
      *     },
      *     validators: array{factories: array<class-string, class-string>}
      * }

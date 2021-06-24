@@ -20,7 +20,7 @@ final class ConfigProvider
      *     dependencies: array{
      *          aliases: array<class-string, class-string>,
      *          factories: array<class-string, class-string>
-     *     }
+     *     },
      *     validators: array{factories: array<class-string, class-string>}
      * }
      */
@@ -41,11 +41,11 @@ final class ConfigProvider
     public function getDependencyConfig(): array
     {
         return [
-            'aliases'    => [
+            'aliases'   => [
                 ClientFactoryInterface::class => ClientFactory::class,
                 ClientInterface::class        => Client::class,
             ],
-            'factories'  => [
+            'factories' => [
                 ClientFactory::class => Factory::class,
                 Client::class        => \MarcelStrahl\LaminasTemporaryEmailValidator\Client\Factory::class,
             ],

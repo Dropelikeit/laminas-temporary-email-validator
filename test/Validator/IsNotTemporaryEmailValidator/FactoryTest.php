@@ -23,7 +23,7 @@ final class FactoryTest extends TestCase
         $config = new ConfigProvider();
 
         $this->container = new ServiceManager();
-        (new Config((array) $config()['dependencies']))->configureServiceManager($this->container);
+        (new Config($config()['dependencies']))->configureServiceManager($this->container);
 
         $this->container->setService('config', $config);
     }
