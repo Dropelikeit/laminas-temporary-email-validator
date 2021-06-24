@@ -35,5 +35,5 @@ jobs:
             - name: "Run PHP CS Check"
               run: "composer cs-check"
 
-            - name: "Run PHPStan"
-              run: "composer analyze"
+            - name: "Run Psalm"
+              run: "composer static-analysis"
