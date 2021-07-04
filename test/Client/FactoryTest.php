@@ -7,12 +7,12 @@ namespace MarcelStrahl\LaminasTemporaryEmailValidator\Test\Client;
 use Laminas\ServiceManager\Config;
 use Laminas\ServiceManager\ServiceManager;
 use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientFactory\Factory;
-use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientFactoryInterface;
 use MarcelStrahl\LaminasTemporaryEmailValidator\Client\Factory as LaminasClientFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 use TemporaryEmailDetection\Client;
 use TemporaryEmailDetection\ClientFactory;
+use TemporaryEmailDetection\ClientFactoryInterface;
 
 final class FactoryTest extends TestCase
 {

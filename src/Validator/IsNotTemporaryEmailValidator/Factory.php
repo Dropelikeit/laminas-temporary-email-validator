@@ -6,9 +6,9 @@ namespace MarcelStrahl\LaminasTemporaryEmailValidator\Validator\IsNotTemporaryEm
 
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
-use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientInterface;
 use MarcelStrahl\LaminasTemporaryEmailValidator\Validator\IsNotTemporaryEmailValidator;
 use TemporaryEmailDetection\Client;
+use TemporaryEmailDetection\ClientInterface;
 
 final class Factory implements FactoryInterface
 {

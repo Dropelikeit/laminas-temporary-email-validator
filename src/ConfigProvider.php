@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace MarcelStrahl\LaminasTemporaryEmailValidator;
 
 use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientFactory\Factory;
-use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientFactoryInterface;
-use MarcelStrahl\LaminasTemporaryEmailValidator\Client\ClientInterface;
 use MarcelStrahl\LaminasTemporaryEmailValidator\Validator\IsNotTemporaryEmailValidator;
 use TemporaryEmailDetection\Client;
 use TemporaryEmailDetection\ClientFactory;
+use TemporaryEmailDetection\ClientFactoryInterface;
+use TemporaryEmailDetection\ClientInterface;
 
 final class ConfigProvider
 {

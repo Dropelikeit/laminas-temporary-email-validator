@@ -23,7 +23,7 @@
     "source": "https://github.com/laminas/laminas-validator"
   },
   "require": {
-    "jprangenbergde/temporary-email-detection": "^1.1",
+    "jprangenbergde/temporary-email-detection": "^1.2",
     "laminas/laminas-config": "^3.5",
     "laminas/laminas-http": "^2.14",
     "laminas/laminas-servicemanager": "^3.6",

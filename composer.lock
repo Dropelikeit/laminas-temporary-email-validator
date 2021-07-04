@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1badb984336e51a1737a3362bacaf954",
+    "content-hash": "d1441ef8a616b029ab4b3070f805ba08",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -277,28 +277,30 @@
         },
         {
             "name": "jprangenbergde/temporary-email-detection",
-            "version": "v1.1",
+            "version": "v1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jprangenbergde/temporary-email-detection.git",
-                "reference": "b2a7ed284c155297ce2c238044bff8231a7c955c"
+                "reference": "eb3154ad1105cc4764d28baa400ee09926f34030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jprangenbergde/temporary-email-detection/zipball/b2a7ed284c155297ce2c238044bff8231a7c955c",
-                "reference": "b2a7ed284c155297ce2c238044bff8231a7c955c",
+                "url": "https://api.github.com/repos/jprangenbergde/temporary-email-detection/zipball/eb3154ad1105cc4764d28baa400ee09926f34030",
+                "reference": "eb3154ad1105cc4764d28baa400ee09926f34030",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/guzzle": "^7.2",
+                "guzzlehttp/guzzle": "^7.3",
                 "php": "^7.4|^8.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.18",
+                "friendsofphp/php-cs-fixer": "^3.0",
                 "phpstan/phpstan": "^0.12.81",
                 "phpstan/phpstan-phpunit": "^0.12.18",
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.16.1",
+                "vimeo/psalm": "^4.8"
             },
             "type": "library",
             "autoload": {
@@ -320,9 +322,9 @@
             "homepage": "https://temporary-email-detection.de",
             "support": {
                 "issues": "https://github.com/jprangenbergde/temporary-email-detection/issues",
-                "source": "https://github.com/jprangenbergde/temporary-email-detection/tree/v1.1"
+                "source": "https://github.com/jprangenbergde/temporary-email-detection/tree/v1.2"
             },
-            "time": "2021-03-22T14:25:20+00:00"
+            "time": "2021-07-01T14:13:28+00:00"
         },
         {
             "name": "laminas/laminas-config",
@@ -5280,5 +5282,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
